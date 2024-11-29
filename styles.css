@@ -1,0 +1,68 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  text-align: center;
+}
+
+.content h1{
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.content a{
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(251, 255, 16);
+  font-size: 1rem;
+  border: 2px solid rgb(0, 173, 0);
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.content a:hover{
+  cursor: pointer;
+  color: rgb(0, 173, 0);
+  background: rgb(251, 255, 16);
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 100%;
+  }
+}
